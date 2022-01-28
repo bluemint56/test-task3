@@ -14,5 +14,5 @@ use App\Htpp\Controllers\TestController;
 |
 */
 
-Route::get('/building', [TestController::class, 'building']);
-Route::get('/building/{room}', [TestController::class, 'building']);
+Route::get('/', [TestController::class, 'index']);
+Route::post('/thanks', [TestController::class, 'post']);

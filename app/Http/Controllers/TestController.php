@@ -4,20 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class TestController extends Controller
 {
-    public function building()
+    public function index()
     {
-        $room = [
-            '建物です'
-        ];
-        return view('building', $room);
+        return view('index');
     }
-    public function building($room)
+    public function post(Request $request)
     {
-        $room = [
-            '部屋番号は' . '{room}' . 'です'
-        ];
-        return view ('building', $room);
+        
+        return view ('thanks');
     }
 }
